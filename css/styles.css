@@ -68,17 +68,24 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
+    text-align: left;
     padding: 10px 40px 16px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    width: 100%;
 }
 
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
+}
+#breadcrumb-nav {
+    display: block;
+    background: none;
+    width: calc(50% - 80px);
+    padding: 0;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -187,6 +194,9 @@ nav h1 a {
     width: auto;
     z-index: 1000;
   }
+  #breadcrumb-nav {
+    width: 100%;
+  }
   .inside #reviews-container h2 {
     margin: 10px;
   }
@@ -248,7 +258,7 @@ nav h1 a {
   min-height: 248px;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
